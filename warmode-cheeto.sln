@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheeto", "Cheeto\Cheeto.csproj", "{CD14AF04-FCEE-422A-AC5C-5062AA7DB5FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD14AF04-FCEE-422A-AC5C-5062AA7DB5FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD14AF04-FCEE-422A-AC5C-5062AA7DB5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD14AF04-FCEE-422A-AC5C-5062AA7DB5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD14AF04-FCEE-422A-AC5C-5062AA7DB5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E58B523-DB33-4261-8078-3F9278318817}
+	EndGlobalSection
+EndGlobal
