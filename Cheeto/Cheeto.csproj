@@ -80,10 +80,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cheeto.cs" />
-    <Compile Include="Drawing.cs" />
-    <Compile Include="Dumper.cs" />
-    <Compile Include="Plugin.cs" />
+    <Compile Include="src\Cheeto.cs" />
+    <Compile Include="src\Drawing.cs" />
+    <Compile Include="src\Dumper.cs" />
+    <Compile Include="src\Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
