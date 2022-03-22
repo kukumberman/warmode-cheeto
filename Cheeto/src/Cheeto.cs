@@ -366,6 +366,11 @@ namespace Cheeto
                 GUI.color = Color.blue;
                 Drawing.Line(center, w2s, m_LineThickness);
             }
+
+            GUI.color = Color.white;
+            Vector2 pos = new Vector2(Screen.width * 0.5f, Screen.height * 0.4f);
+            CPlayerData player = PlayerControll.Player[m_TargetPlayer.Index];
+            Drawing.Text(pos, player.Name, m_TextStyle);
         }
 
         private void DrawPlayer(CPlayerData player)
