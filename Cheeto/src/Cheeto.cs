@@ -8,32 +8,40 @@ namespace Cheeto
         private static string ApplicationInfo = "";
         private static ManualLogSource Logger = null;
 
+        // gui
         private bool m_IsWindowOpen = true;
         private Rect m_WindowRect = new Rect(0, 0, 500, 400);
 
+        // gui props
         private bool m_DrawEnemies = true;
         private bool m_DrawTeam = true;
 
+        private bool m_TeleportHack = false;
+        private int m_CircleFov = 100;
+
+        // styling
         private Color m_EnemyColor = Color.red;
         private Color m_TeamColor = Color.green;
-
         private int m_LineThickness = 2;
-
         private GUIStyle m_TextStyle = null;
         private int m_FontSize = 20;
 
         private float m_HeadHeight = 0.2f;
-
-        private bool m_TeleportHack = false;
-        private int m_CircleFov = 100;
+        
+        // core
         private vp_FPCamera vp_FPCamera = null;
         private Camera m_Camera = null;
         private Vector3 m_TargetAimPosition = Vector3.zero;
         private bool m_HasTarget = false;
-
         private Player3rd m_TargetPlayer = null;
 
         int temp = 0;
+
+        // keys
+        private KeyCode m_ToggleMenu = KeyCode.Keypad5;
+        private KeyCode m_AimbotKey = KeyCode.E;
+        private KeyCode m_TempAimbotKey = KeyCode.Q;
+        private KeyCode m_TeleportKey = KeyCode.X;
 
         public static void Run(Plugin loader)
         {
@@ -63,7 +71,7 @@ namespace Cheeto
                 m_Camera = vp_FPCamera.GetComponent<Camera>();
             }
 
-            if (Input.GetKeyDown(KeyCode.Keypad5))
+            if (Input.GetKeyDown(m_ToggleMenu))
             {
                 m_IsWindowOpen = !m_IsWindowOpen;
             }
@@ -72,7 +80,7 @@ namespace Cheeto
                 m_TargetAimPosition = vp_FPCamera.transform.position;
             }
 
-            if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(m_TeleportKey))
             {
                 TeleportBehindEnemy();
             }
@@ -85,14 +93,14 @@ namespace Cheeto
                 DoTeleportHack();
             }
 
-            if (Input.GetKey(KeyCode.Q))
+            if (Input.GetKey(m_TempAimbotKey))
             {
                 DoAim(m_TargetAimPosition);
             }
 
             m_HasTarget = FindTarget();
 
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(m_AimbotKey))
             {
                 if (m_HasTarget)
                 {
