@@ -3,7 +3,7 @@
 ```
 warmode 1.1 2020.3.17f1 d139e5a2334a4e94387b043405769a9f
 ```
-<details>
+<!-- <details>
 <summary>
  <b>Showcase</b>
 </summary>
@@ -11,7 +11,7 @@ warmode 1.1 2020.3.17f1 d139e5a2334a4e94387b043405769a9f
 ![](./Cheeto/showcase/aimbot.webp)
 ![](./Cheeto/showcase/teleport.webp)
  
-</details>
+</details> -->
 
 ## How to use
 
@@ -32,3 +32,23 @@ If you don't know how to install BepInNex you need to follow few steps:
 - Press <kbd>Num5</kbd> to toggle menu
 - Hold <kbd>E</kbd> to aim at enemy
 - Press <kbd>X</kbd> to teleport behind enemy
+
+## Showcase
+
+<table>
+  <tr>
+    <td>
+      <img src="./Cheeto/showcase/aimbot.webp" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./Cheeto/showcase/teleport.webp" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="./Cheeto/showcase/gameplay.webp" />
+    </td>
+  </tr>
+</table>
