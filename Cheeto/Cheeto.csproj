@@ -39,6 +39,9 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>$(BepinexPath)\unhollowed\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepinexPath)\core\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="BepInEx.Core">
       <HintPath>$(BepinexPath)\core\BepInEx.Core.dll</HintPath>
     </Reference>
@@ -88,6 +91,7 @@
     <Compile Include="src\Cheeto.cs" />
     <Compile Include="src\Drawing.cs" />
     <Compile Include="src\Dumper.cs" />
+    <Compile Include="src\Patches\NetClient_Patch.cs" />
     <Compile Include="src\Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
